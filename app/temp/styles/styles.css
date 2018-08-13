@@ -982,7 +982,7 @@ Instead edit gulp/templates/sprite */
 
 .icon--clear-view-escapes {
     width: 142.4px;
-    height: 59px;
+    height: 59.53px;
     background-position: 0 0;
   }
 
@@ -1135,6 +1135,7 @@ Instead edit gulp/templates/sprite */
   content: "";
   position: absolute;
   top: 0;
+  left: 0;
   width: 20px;
   height: 3px;
   background-color: #FFF;
@@ -1145,16 +1146,19 @@ Instead edit gulp/templates/sprite */
 .site-header__menu-icon__middle {
   position: absolute;
   top: 8px;
+  left: 0;
   width: 20px;
   height: 3px;
   background-color: #FFF;
   transition: all .3s ease-out;
+  transform-origin: 0 50%;
 }
 
 .site-header__menu-icon::after {
   content: "";
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 20px;
   height: 3px;
   background-color: #FFF;
@@ -1280,4 +1284,15 @@ Instead edit gulp/templates/sprite */
     padding: 12px 0;
     background-color: transparent;
   }
+}
+
+.reveal-item {
+  opacity: 0;
+  transition: all 1.5s ease-out;
+  transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+  opacity: 1;
+  transform: scale(1);
 }
